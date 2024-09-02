@@ -1,0 +1,261 @@
+/* Stili generali del corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+/* Stili per la navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+nav ul .dropdown {
+    display: none; /* Nascondi il menu a tendina per default */
+    background-color: #333;
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    min-width: 160px; /* Larghezza minima del menu a tendina */
+}
+
+nav ul .dropdown li a {
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Mostra il menu a tendina quando si passa sopra la voce del menu */
+}
+
+/* Stili per il form di aggiunta prodotto */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Stili per i campi di input nel form */
+input[type="text"],
+input[type="number"],
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px; 
+    height: 390px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    text-align: center;
+    overflow: hidden; 
+    position: relative; 
+}
+
+.product-image {
+    width: 100%; 
+    height: 60%; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+#addcart {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; 
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    margin-top: 5px;
+}
+
+#dettaglio {
+    background-color: #007bff; 
+}
+
+#addcart {
+    background-color: #e9ad47;
+}
+
+#dettaglio:hover {
+    background-color: #0056b3; 
+}
+
+#addcart:hover {
+    background-color: #45a049; 
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="url"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .product-card {
+        width: 100%;
+        height: auto; 
+    }
+
+    .product-image {
+        height: 120px; 
+    }
+
+    .button-container {
+        flex-direction: column; 
+    }
+
+    #dettaglio,
+    #addcart {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    #addcart {
+        margin-bottom: 0; 
+    }
+}
+
+.search-container {
+    margin: 20px auto;
+    max-width: 400px; 
+    padding: 0 10px; 
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#deletebtn {
+    padding: 10px;
+    border-radius: 5px;
+    width: 45%; 
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    margin-top: 5px;
+    background-color: red;
+}
+
+#deletebtn:hover {
+    background-color: #9b0202; 
+}
+
+#editbtn {
+    padding: 10px;
+    border-radius: 5px;
+    width: 45%; 
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+    margin-top: 5px;
+    background-color: rgb(166, 181, 4);
+}
+
+#editbtn:hover {
+    background-color: #afa903; 
+}
+
+button, .btn {
+  display: inline-block;
+  padding: 10px 20px; 
+  margin: 5px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  text-align: center; 
+  text-decoration: none; 
+  color: #ffffff; 
+  background-color: #007bff; 
+  border: 2px solid #007bff; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); 
+}

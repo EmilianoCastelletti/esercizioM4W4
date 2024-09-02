@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="styleMarket.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="indexMarket.html">Home</a></li>
+            <li>
+                <a href="#area-riservata">Area Riservata</a>
+                <ul class="dropdown">
+                    <li><a href="create.html">Aggiungi Prodotto</a></li>
+                    <li><a href="edit.html">Modifica/Elimina Prodotto</a></li>
+                </ul>
+            </li>
+            <li><a href="#log-in">Log In</a></li>
+        </ul>
+    </nav>
+
+    <form>
+        <input type="text" placeholder="Nome Prodotto" id="name">
+        <input type="text" placeholder="Descrizione" id="description">
+        <input type="text" placeholder="Brand" id="brand">
+        <input type="number" placeholder="Prezzo" id="price">
+        <input type="url" placeholder="Inserisci url immagine" id="image">
+        <button id="salva">Salva</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <script src="js/editmod.js"></script>
+</body>
+</html>

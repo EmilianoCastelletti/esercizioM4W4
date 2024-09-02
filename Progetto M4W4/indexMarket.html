@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage con Navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="styleMarket.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="indexMarket.html">Home</a></li>
+            <li>
+                <a href="#area-riservata">Area Riservata</a>
+                <ul class="dropdown">
+                    <li><a href="create.html">Aggiungi Prodotto</a></li>
+                    <li><a href="edit.html">Modifica/Elimina Prodotto</a></li>
+                </ul>
+            </li>
+            <li><a href="#log-in">Log In</a></li>
+        </ul>
+    </nav>
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Cerca prodotti...">
+    </div>
+    <!--Navbar-->
+
+
+    <div id="product-container">
+        <h1>Prodotti Disponibili</h1>
+        <div id="product-cards" class="card-container">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <script src="js/indexprova.js"></script>
+</body>
+
+</html>
