@@ -37,18 +37,20 @@ crea.addEventListener('click', async (c) => {
             throw new Error('Errore nella richiesta di rete');
         }
 
+
         const dati = await response.json();
         console.log(dati);
+        Swal.fire({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success"
+          }).then(()=>
+            window.location.href = 'create.html');
         
     } catch (error) {
         console.error('Si è verificato un errore:', error);
     }
-    Swal.fire({
-        title: "Good job!",
-        text: "You clicked the button!",
-        icon: "success"
-      }).then(()=>
-        window.location.href = 'create.html');
+    
 
     
 
